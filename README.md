@@ -3,3 +3,4 @@ Creating music isn’t always as easy as we might wish. Instruments can be incre
 This project is heavily inspired by Avicii, a legendary DJ and producer who composed some of the most iconic and widely listened-to songs in history—all by himself, using digital tools. Following that inspiration, the goal of this project is to develop a music creation tool that empowers anyone, regardless of musical expertise or access to real instruments, to compose and experiment with music.
 
 By simulating instruments such as guitars, drums, and bass, and applying sound effects through a digital pedalboard system, users can mix and create unique sounds. Whether you’re an aspiring musician or simply looking for a fun way to explore music creation, this project aims to provide an engaging and interactive experience that brings music production closer to everyone.
+![Music maker (1)](https://github.com/user-attachments/assets/a8aa1e89-74b9-4a72-9dca-4e55090db5f1)
