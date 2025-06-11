@@ -1,18 +1,16 @@
 #include "Drums.h"
 
 // constructors
-Drums::Drums() : Instrument("Drums", 50) {}
+Drums::Drums() : Instrument("Drums", 50, 0) {}
 
-Drums::Drums(const std::string& name, int volume) : Instrument(name, volume) {}
+Drums::Drums(const std::string& name, int volume, int duration) : Instrument(name, volume, duration) {}
 
-// override
+// overloading the playSound method
 std::string Drums::playSound() const {
-    std::string sound = "Beat drums sound";
+    return "Beat drums sound";
+}
 
-    // apply effects
-    for (const auto& effect : effects) {
-        sound = effect->modifySound(sound);
-    }
-
-    return sound;
+// overloading the playSound method with volume
+std::string Drums::playSound(int volume) const {
+    return "Beat drums sound at volume " + std::to_string(volume);
 }
