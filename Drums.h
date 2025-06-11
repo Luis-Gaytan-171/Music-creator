@@ -6,10 +6,11 @@
 class Drums : public Instrument {
 public:
     Drums(); // constructor
-    Drums(const std::string& name, int volume); // overloaded constructor
+    Drums(const std::string& name, int volume, int duration); // overloaded constructor
 
-    // override
+    // overloading the playSound method
     std::string playSound() const override;
+    std::string playSound(int volume) const override; // method overloading
 };
 
 #endif
