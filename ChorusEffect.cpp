@@ -5,7 +5,7 @@ ChorusEffect::ChorusEffect() : Effect("Chorus") {}
 
 ChorusEffect::ChorusEffect(const std::string& name) : Effect(name) {}
 
-// override
+// overloading modifySound method
 std::string ChorusEffect::modifySound(const std::string& sound) const {
     return sound + " + Chorus effect";
 }
