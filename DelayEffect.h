@@ -8,7 +8,7 @@ public:
     DelayEffect(); // constructor
     DelayEffect(const std::string& name); // overloaded constructor
 
-    // override
+    // overloading modifySound method
     std::string modifySound(const std::string& sound) const override;
 };
 
