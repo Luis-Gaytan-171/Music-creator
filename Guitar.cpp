@@ -1,18 +1,16 @@
 #include "Guitar.h"
 
 // constructors
-Guitar::Guitar() : Instrument("Guitar", 50) {}
+Guitar::Guitar() : Instrument("Guitar", 50, 0) {}
 
-Guitar::Guitar(const std::string& name, int volume) : Instrument(name, volume) {}
+Guitar::Guitar(const std::string& name, int volume, int duration) : Instrument(name, volume, duration) {}
 
-// override
+// overloading the playSound method
 std::string Guitar::playSound() const {
-    std::string sound = "Strum guitar sound";
+    return "Strum guitar sound";
+}
 
-    // apply effects
-    for (const auto& effect : effects) {
-        sound = effect->modifySound(sound);
-    }
-
-    return sound;
+// overloading the playSound method with volume
+std::string Guitar::playSound(int volume) const {
+    return "Strum guitar sound at volume " + std::to_string(volume);
 }
