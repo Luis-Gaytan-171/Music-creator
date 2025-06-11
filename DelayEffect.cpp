@@ -5,7 +5,7 @@ DelayEffect::DelayEffect() : Effect("Delay") {}
 
 DelayEffect::DelayEffect(const std::string& name) : Effect(name) {}
 
-// override
+// overloading modifySound method
 std::string DelayEffect::modifySound(const std::string& sound) const {
     return sound + " + Echo delay";
 }
